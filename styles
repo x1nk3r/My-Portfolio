@@ -1,0 +1,31 @@
+:root {
+  --neon-purple: #9d00ff;
+  --neon-cyan: #00f7ff;
+  --dark-bg: #0a001a;
+  --light-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg: var(--dark-bg);
+  --text: white;
+  --accent: var(--neon-purple);
+}
+
+[data-theme="light"] {
+  --bg: var(--light-bg);
+  --text: #333;
+  --accent: #6a00b8;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(45deg, var(--neon-purple), var(--neon-cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Glow Effects */
+.glow-on-hover:hover {
+  box-shadow: 0 0 15px var(--neon-purple);
+}
