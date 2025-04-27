@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oyinkansola | Full-Stack Developer</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <!-- Tawk.to Live Chat -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+  <button id="theme-toggle" class="neon-button">🌙 Dark Mode</button>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="gradient-text">Hi, I'm <span>Balogun Olaoluwa</span></h1>
+    <p class="neon-subtext">Freelance Full-Stack Developer</p>
+    <a href="#work" class="neon-button pulse">View My Work</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2 class="neon-underline">What I Do</h2>
+    <div class="services-grid">
+      <div class="service-card glow-on-hover">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Frontend & Backend solutions with modern tech stacks.</p>
+      </div>
+      <!-- More services -->
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="work">
+    <h2 class="neon-underline">My Projects</h2>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="static/images/project1.jpg" alt="E-Commerce App">
+        <div class="project-info">
+          <h3>NeonShop E-Commerce</h3>
+          <p>Full-stack store with React & Django</p>
+          <a href="#" class="demo-link">Live Demo</a>
+        </div>
+      </div>
+      <!-- More projects -->
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="neon-underline">Get In Touch</h2>
+    <form action="/submit_form" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Your Project"></textarea>
+      <button type="submit" class="neon-button">Send Message</button>
+    </form>
+  </section>
+
+  <script src="static/js/script.js"></script>
+  <!-- Tawk.to Live Chat -->
+  <script>
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/YOUR_TAWKTO_KEY';
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+</body>
+</html>
